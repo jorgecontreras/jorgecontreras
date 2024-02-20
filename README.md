@@ -2,3 +2,8 @@
 
 I am passionate about creating experiences that improve people’s lives. My interests include programming, systems design, software architecture, cloud computing, automation, continuous integration and continuous delivery. 
 
+### Links
+
+- [Notes](https://jorgecontreras.github.io)
+- [Blog](https://jorgecontreras.substack.com)
+- [LinkedIn](https://www.linkedin.com/in/jorgecontreras-profile)
