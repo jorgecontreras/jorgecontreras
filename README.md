@@ -7,3 +7,6 @@ I am passionate about creating experiences that improve people’s lives. My int
 - [Notes](https://jorgecontreras.github.io)
 - [Blog](https://jorgecontreras.substack.com)
 - [LinkedIn](https://www.linkedin.com/in/jorgecontreras-profile)
+- [Dev.to](https://dev.to/jorgecontreras)
+- [x](https://twitter.com/jorgedevx)
+- [Instagram](https://www.instagram.com/imjorgecontreras/)
