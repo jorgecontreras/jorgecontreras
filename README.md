@@ -9,5 +9,6 @@ I am passionate about creating experiences that improve people’s lives. My int
 - [Medium](https://medium.com/@jorge-contreras)
 - [LinkedIn](https://www.linkedin.com/in/jorgecontreras-profile)
 - [Dev.to](https://dev.to/jorgecontreras)
-- [x](https://twitter.com/jorgedevx)
+- [Credly](https://www.credly.com/users/jorge-contreras-rodriguez/badges#)
 - [Instagram](https://www.instagram.com/imjorgecontreras/)
+- [x](https://twitter.com/jorgedevx)
