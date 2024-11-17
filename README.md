@@ -1,6 +1,6 @@
 ### About Me
 
-I am passionate about creating experiences that improve people’s lives. My interests include programming, systems design, software architecture, cloud computing, automation, continuous integration and continuous delivery. 
+I am passionate about building software systems that solve real world problems. My interests include programming, systems design, software architecture, cloud computing, automation, continuous integration and continuous delivery. 
 
 ### Links
 
