@@ -1,6 +1,6 @@
 ### About Me
 
-I am passionate about building software systems to solve real world problems. My interests include programming, systems design, software architecture, cloud computing, automation, continuous integration and continuous delivery. 
+Experienced technology leader with a passion for tackling complex challenges and delivering practical, customer-focused solutions. My approach centers on understanding customer needs and finding ways to deliver the highest value without compromising on efficiency.
 
 ### Links
 
