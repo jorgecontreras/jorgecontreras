@@ -4,11 +4,8 @@ I am passionate about building software systems to solve real world problems. My
 
 ### Links
 
-- [Notes](https://jorgecontreras.github.io)
-- [Blog](https://jorgecontreras.substack.com)
+- [Github](https://github.com/jorgecontreras)
 - [Medium](https://medium.com/@jorge-contreras)
 - [LinkedIn](https://www.linkedin.com/in/jorgecontreras-profile)
 - [Dev.to](https://dev.to/jorgecontreras)
 - [Credly](https://www.credly.com/users/jorge-contreras-rodriguez/badges#)
-- [Instagram](https://www.instagram.com/imjorgecontreras/)
-- [x](https://twitter.com/jorgedevx)
