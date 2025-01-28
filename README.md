@@ -6,13 +6,17 @@ Currently, I'm dedicated to strategic leadership, aligning technology initiative
 
 ### Skills
 
-**Programming**: Golang, Python, PHP 
+| **Category**         | **Technologies/Tools**                           |
+|-----------------------|-------------------------------------------------|
+| **Programming**       | Golang, Python, PHP                             |
+| **Databases**         | MySQL, Postgres, NoSQL (Redis)                  |
+| **Cloud Computing**   | AWS, Terraform, Docker, Kubernetes              |
+| **Tools**             | GitLab, GitHub, New Relic, Sumo Logic           |
 
-**Databases**: MySQL, Postgres, NoSQL (Redis) 
 
-**Cloud Computing**: AWS, Terraform, Docker, Kubernetes 
 
-**Tools**: GitLab, Github, New Relic, Sumo Logic
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jorgecontreras&langs_count=8&theme=dark&layout=compact)
+
 
 ### Competencies
 - Leadership
