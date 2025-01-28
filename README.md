@@ -28,7 +28,7 @@ Currently, I'm dedicated to strategic leadership, aligning technology initiative
 - AWS Certified AI Practitioner
 - AWS Certified Cloud Practitioner
 
-![image info](./media/awsdev.png)
+![aws developer](./media/awsdev.png)
 
 ### Links
 
