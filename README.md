@@ -30,6 +30,7 @@ Currently, I'm dedicated to strategic leadership, aligning technology initiative
 
 ![aws developer](./media/awsdev.png)
 ![ckad](./media/ckad.png)
+![aws ai](./media/awsai.png)
 
 ### Links
 
