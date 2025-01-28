@@ -23,10 +23,10 @@ Currently, I'm dedicated to strategic leadership, aligning technology initiative
 ### Certifications
 
 ![aws developer](./media/awsdev.png)
-![ckad](./media/ckad.png)
 ![aws ai](./media/awsai.png)
-![pmi acp](./media/pmiacp.png)
 ![aws cp](./media/awscloud.png)
+![ckad](./media/ckad.png)
+![pmi acp](./media/pmiacp.png)
 
 ### Links
 
