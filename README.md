@@ -27,6 +27,7 @@ Currently, I'm dedicated to strategic leadership, aligning technology initiative
 ![aws cp](./media/awscloud.png)
 ![ckad](./media/ckad.png)
 ![pmi acp](./media/pmiacp.png)
+![github](./media/ghf.png)
 
 ### Links
 
