@@ -22,16 +22,11 @@ Currently, I'm dedicated to strategic leadership, aligning technology initiative
 
 ### Certifications
 
-- Project Management Institute - Agile Certified Practitioner (PMI-ACP)
-- Linux Foundation - Certified Kubernetes Application Developer (CKAD)
-- AWS Certified Developer – Associate
-- AWS Certified AI Practitioner
-- AWS Certified Cloud Practitioner
-
 ![aws developer](./media/awsdev.png)
 ![ckad](./media/ckad.png)
 ![aws ai](./media/awsai.png)
 ![pmi acp](./media/pmiacp.png)
+![aws cp](./media/awscloud.png)
 
 ### Links
 
