@@ -46,7 +46,7 @@ Currently, I'm dedicated to strategic leadership, aligning technology initiative
 [<img src="./media/ckad.png" alt="CKAD Certification" height="80">](https://www.credly.com/badges/254beb18-1ccf-4c0c-af65-38b91456f956)
 [<img src="./media/pmiacp.png" alt="PMI-ACP Certification" height="80">](https://www.credly.com/badges/9489166e-72a1-4652-b729-a4c5497e4257)
 [<img src="./media/ghf.png" alt="GitHub Actions Certification" height="80">](https://www.credly.com/badges/c2b28805-1c7e-4302-a6c9-5ab7c9034c99)
-                                                                   |
+                                                                   
 
 
 ## 🌐 Connect with Me
