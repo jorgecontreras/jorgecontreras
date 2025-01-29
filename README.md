@@ -1,6 +1,4 @@
 
-# Jorge Contreras
-
 Seasoned technology leader with a passion for tackling complex challenges and delivering practical, customer-focused solutions. My approach centers on understanding customer needs and finding ways to deliver the highest value without compromising on efficiency.
 
 With deep experience in technical strategy, system design, algorithms, computer programming, architecture, cloud computing, and leading projects from inception to delivery, I focus on driving meaningful business impact. 
