@@ -47,7 +47,7 @@ Currently, I'm dedicated to strategic leadership, aligning technology initiative
                                                                    
 
 
-## 🌐 Connect with Me
+## 🔗 Links
 
 <p align="center">
   <a href="https://github.com/jorgecontreras" target="_blank">
