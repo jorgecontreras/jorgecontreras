@@ -14,7 +14,7 @@ Currently, I'm dedicated to strategic leadership, aligning technology initiative
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=jorgecontreras&layout=compact&langs_count=8&card_width=320&theme=vue-dark" />
 </a>
 
-## 🛠️ Tech Skills
+## Tech Skills
 
 <p style="display: flex; flex-wrap: wrap; gap: 0;">
   <img src="https://img.shields.io/badge/Golang-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
@@ -34,9 +34,7 @@ Currently, I'm dedicated to strategic leadership, aligning technology initiative
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
 </p>
 
-
-
-## 🎓 Certifications
+## Certifications
 
 [<img src="./media/awsdev.png" alt="AWS Certified Developer" height="80">](https://www.credly.com/badges/be468178-1502-481b-a020-2b6cae9b76f2)
 [<img src="./media/awsai.png" alt="AWS Certified AI Specialty" height="80">](https://www.credly.com/badges/462a85be-5057-433b-a497-f005bde62d8e)
@@ -47,7 +45,7 @@ Currently, I'm dedicated to strategic leadership, aligning technology initiative
                                                                    
 
 
-## 🔗 Links
+## 
 
 <p align="center">
   <a href="https://github.com/jorgecontreras" target="_blank">
