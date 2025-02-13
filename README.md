@@ -40,6 +40,7 @@ Currently, I'm dedicated to strategic leadership, aligning technology initiative
 [<img src="./media/awsai.png" alt="AWS Certified AI Specialty" height="80">](https://www.credly.com/badges/462a85be-5057-433b-a497-f005bde62d8e)
 [<img src="./media/awscloud.png" alt="AWS Certified Cloud Practitioner" height="80">](https://www.credly.com/badges/68becbbf-d7cf-4e3a-89ff-80b5e0006e9b)
 [<img src="./media/ckad.png" alt="CKAD Certification" height="80">](https://www.credly.com/badges/254beb18-1ccf-4c0c-af65-38b91456f956)
+[<img src="./media/kcna.png" alt="KCNA Certification" height="80">](https://www.credly.com/earner/earned/badge/5b0edfdc-3f98-427c-bd7b-f8e436e50447)
 [<img src="./media/pmiacp.png" alt="PMI-ACP Certification" height="80">](https://www.credly.com/badges/9489166e-72a1-4652-b729-a4c5497e4257)
 [<img src="./media/ghf.png" alt="GitHub Actions Certification" height="80">](https://www.credly.com/badges/c2b28805-1c7e-4302-a6c9-5ab7c9034c99)
 
