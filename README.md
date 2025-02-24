@@ -43,6 +43,7 @@ Currently, I'm dedicated to strategic leadership, aligning technology initiative
 [<img src="./media/kcna.png" alt="KCNA Certification" height="80">](https://www.credly.com/earner/earned/badge/5b0edfdc-3f98-427c-bd7b-f8e436e50447)
 [<img src="./media/pmiacp.png" alt="PMI-ACP Certification" height="80">](https://www.credly.com/badges/9489166e-72a1-4652-b729-a4c5497e4257)
 [<img src="./media/ghf.png" alt="GitHub Actions Certification" height="80">](https://www.credly.com/badges/c2b28805-1c7e-4302-a6c9-5ab7c9034c99)
+[<img src="./media/tf.png" alt="Terraform Associate" height="80">](https://www.credly.com/badges/73f76a3e-76ee-4752-866c-eee07f253c76/public_url)
 
 _____
 
