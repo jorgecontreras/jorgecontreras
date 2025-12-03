@@ -1,0 +1,57 @@
+/* Custom Styles for jorgecontreras.dev */
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    opacity: 0; /* Start invisible */
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+
+/* Subtle Pattern Overlay for Hero */
+.hero-pattern {
+    background-image: radial-gradient(#C5A572 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.03;
+}
+
+/* Card Hover Lift Effect */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Selection Color */
+::selection {
+    background-color: #C5A572; /* Accent color */
+    color: white;
+}
+
+/* Focus outlines for accessibility but prettier */
+:focus-visible {
+    outline: 2px solid #C5A572;
+    outline-offset: 2px;
+}
+
