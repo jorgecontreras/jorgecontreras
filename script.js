@@ -24,7 +24,7 @@ const translations = {
         "about.list_3": "Crear productos digitales desde cero",
         "about.list_4": "Integrar IA en procesos reales (no sólo como moda)",
         "about.list_5": "Diseñar sistemas escalables que soportan el crecimiento",
-        "about.closing": "No vendo humo. Construyo soluciones reales.",
+        "about.closing": "Diseño y Construyo soluciones reales.",
 
         // Services
         "services.label": "Servicios",
@@ -55,7 +55,6 @@ const translations = {
 
         // Certifications
         "cert.title": "Certificaciones y Credenciales",
-        "cert.other": "y otras actualizaciones continuas en Cloud & AI",
 
         // Philosophy
         "philosophy.title": "Lo que me mueve",
@@ -100,7 +99,7 @@ const translations = {
         "about.list_3": "Create digital products from scratch",
         "about.list_4": "Integrate AI into real processes (not just hype)",
         "about.list_5": "Design scalable systems that support growth",
-        "about.closing": "I don't sell smoke. I build real solutions.",
+        "about.closing": "I design and build real solutions.",
 
         // Services
         "services.label": "Services",
