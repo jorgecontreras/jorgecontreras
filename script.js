@@ -16,7 +16,7 @@ const translations = {
 
         // About
         "about.title": "Quién soy",
-        "about.main": "Soy ingeniero y líder tecnológico con más de 15 años de experiencia desarrollando software, diseñando plataformas en la nube y dirigiendo equipos técnicos.",
+        "about.main": "Soy líder tecnológico con más de 15 años de experiencia desarrollando software, diseñando plataformas en la nube y dirigiendo equipos técnicos.",
         "about.quote": "“Traduzco la tecnología al lenguaje del negocio.”",
         "about.list_intro": "He trabajado con directores, equipos operativos y fundadores para:",
         "about.list_1": "Reducir costos a través de automatización",
@@ -91,7 +91,7 @@ const translations = {
 
         // About
         "about.title": "Who I am",
-        "about.main": "I am an engineer and tech leader with over 15 years of experience developing software, designing cloud platforms, and leading technical teams.",
+        "about.main": "I am a tech leader with over 15 years of experience developing software, designing cloud platforms, and leading technical teams.",
         "about.quote": "“I translate technology into business language.”",
         "about.list_intro": "I have worked with directors, operational teams, and founders to:",
         "about.list_1": "Reduce costs through automation",
