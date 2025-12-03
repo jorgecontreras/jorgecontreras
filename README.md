@@ -5,15 +5,6 @@ With deep experience in technical strategy, system design, algorithms, computer 
 
 Currently, I'm dedicated to strategic leadership, aligning technology initiatives with broader business goals, and fostering a culture of innovation. I enjoy partnering with stakeholders at all levels to ensure alignment, inspire teams, and create impactful, scalable solutions that propel organizations forward.
 
-
-
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=jorgecontreras&theme=vue-dark&rank_icon=github" />
-</a>
-<a href="https://github.com/anuraghazra/convoychat">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=jorgecontreras&layout=compact&langs_count=8&card_width=320&theme=vue-dark" />
-</a>
-
 ## Tech Skills
 
 <p style="display: flex; flex-wrap: wrap; gap: 0;">
