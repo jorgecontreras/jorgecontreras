@@ -7,25 +7,25 @@ DEPLOYMENT INSTRUCTIONS (S3 + CloudFront):
 5. Invalidation: Every time you update this file, create a CloudFront invalidation for "/*" to clear the cache.
 -->
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jorge Contreras | Tecnología, Estrategia y Ejecución</title>
-    <meta name="description" content="Ingeniero y líder tecnológico. Traduzco la tecnología al lenguaje del negocio. Automatización, arquitectura en la nube e IA para empresas modernas.">
+    <title>Jorge Contreras | AI Engineering Manager</title>
+    <meta name="description" content="Engineering Manager. MCP, AI governance, and production LLM systems. 15+ years in backend, cloud, and technical leadership.">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jorgecontreras.dev/">
-    <meta property="og:title" content="Jorge Contreras | Tecnología y Estrategia">
-    <meta property="og:description" content="Ingeniero y líder tecnológico. Ayudo a directores y fundadores a escalar sus negocios con tecnología real.">
+    <meta property="og:title" content="Jorge Contreras | AI Engineering Manager">
+    <meta property="og:description" content="Engineering Manager. MCP servers, AI governance, and production LLM systems.">
     <meta property="og:image" content=""> <!-- Add a generic OG image if available later -->
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -42,7 +42,7 @@ DEPLOYMENT INSTRUCTIONS (S3 + CloudFront):
                         'accent-hover': '#b08d55',
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        sans: ['Work Sans', 'sans-serif'],
                     }
                 }
             }
@@ -65,44 +65,30 @@ DEPLOYMENT INSTRUCTIONS (S3 + CloudFront):
             background: #9ca3af; 
         }
     </style>
-    <script src="script.js" defer></script>
 </head>
-<body class="bg-white text-primary font-sans antialiased selection:bg-accent selection:text-white">
+<body class="bg-white text-primary font-sans font-light antialiased selection:bg-accent selection:text-white">
 
     <!-- Navbar -->
     <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="text-xl font-semibold tracking-tight hover:text-accent transition-colors">
+            <a href="#" class="text-xl font-light tracking-tight hover:text-accent transition-colors">
                 Jorge Contreras
             </a>
             
             <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
-                <a href="#about" class="hover:text-accent transition-colors" data-i18n="nav.about">Quién soy</a>
-                <a href="#services" class="hover:text-accent transition-colors" data-i18n="nav.services">Qué hago</a>
-                <a href="#results" class="hover:text-accent transition-colors" data-i18n="nav.results">Resultados</a>
-                <a href="#certifications" class="hover:text-accent transition-colors" data-i18n="nav.certifications">Certificaciones</a>
-                
-                <!-- Language Toggle -->
-                <div class="flex items-center space-x-2 border-l border-gray-200 pl-6">
-                    <button id="btn-es" onclick="setLanguage('es')" class="text-primary font-bold hover:text-accent transition-colors">ES</button>
-                    <span class="text-gray-300">/</span>
-                    <button id="btn-en" onclick="setLanguage('en')" class="text-gray-400 font-medium hover:text-accent transition-colors">EN</button>
-                </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-light text-gray-600">
+                <a href="#about" class="hover:text-accent transition-colors">Who I am</a>
+                <a href="#services" class="hover:text-accent transition-colors">What I do</a>
+                <a href="#results" class="hover:text-accent transition-colors">Results</a>
+                <a href="#certifications" class="hover:text-accent transition-colors">Certifications</a>
 
-                <a href="#contact" class="px-5 py-2.5 bg-primary text-white rounded-sm hover:bg-accent transition-colors duration-300" data-i18n="nav.contact">
-                    Contacto
+                <a href="#contact" class="px-5 py-2.5 bg-primary text-white rounded-sm hover:bg-accent transition-colors duration-300">
+                    Contact
                 </a>
             </div>
 
-            <!-- Mobile Menu Button (simple implementation) -->
-            <div class="md:hidden flex items-center gap-4">
-                 <div class="flex items-center space-x-2 text-sm">
-                    <button onclick="setLanguage('es')" class="font-bold text-primary">ES</button>
-                    <span class="text-gray-300">/</span>
-                    <button onclick="setLanguage('en')" class="text-gray-500">EN</button>
-                </div>
-                <a href="#contact" class="text-sm font-medium text-accent" data-i18n="nav.schedule">Agendar</a>
+            <div class="md:hidden">
+                <a href="#contact" class="text-sm font-light text-accent">Contact</a>
             </div>
         </div>
     </nav>
@@ -113,243 +99,229 @@ DEPLOYMENT INSTRUCTIONS (S3 + CloudFront):
         <div class="absolute inset-0 hero-pattern pointer-events-none"></div>
 
         <div class="w-full md:w-3/5 space-y-8 relative z-10">
-            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight animate-fade-in-up">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-light leading-tight tracking-tight animate-fade-in-up">
                 Jorge Contreras
             </h1>
-            <h2 class="text-2xl md:text-3xl text-gray-500 font-light leading-snug animate-fade-in-up delay-100" data-i18n="hero.subtitle">
-                Tecnología, estrategia y ejecución <br class="hidden md:block">para negocios modernos.
+            <h2 class="text-2xl md:text-3xl text-gray-500 font-light leading-snug animate-fade-in-up delay-100">
+                Engineering Manager. Production AI platforms.
             </h2>
-            <p class="text-lg text-gray-600 max-w-xl leading-relaxed animate-fade-in-up delay-200" data-i18n="hero.description">
-                Ayudo a líderes empresariales a traducir necesidades complejas en soluciones tecnológicas escalables, rentables y reales.
+            <p class="text-lg text-gray-600 max-w-xl leading-relaxed animate-fade-in-up delay-200">
+                I design MCP servers, AI governance, and LLM systems in production. 15+ years in backend, cloud, and engineering leadership.
             </p>
             
-            <div class="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in-up delay-300">
-                <a href="mailto:hi@jorgecontreras.dev" class="inline-flex justify-center items-center px-8 py-4 bg-accent text-white font-medium text-lg rounded-sm hover:bg-accent-hover transition-colors duration-300 shadow-sm" data-i18n="hero.cta_primary">
-                    Agendar una llamada
+            <div class="flex flex-row flex-wrap gap-2 pt-4 animate-fade-in-up delay-300">
+                <a href="mailto:hi@jorgecontreras.dev" class="inline-flex justify-center items-center gap-1.5 px-4 py-2 bg-accent text-white font-light text-sm rounded-sm hover:bg-accent-hover transition-colors duration-300 shadow-sm">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    Email me
                 </a>
-                <a href="mailto:hi@jorgecontreras.dev" class="inline-flex justify-center items-center px-8 py-4 border border-gray-200 text-gray-700 font-medium text-lg rounded-sm hover:border-accent hover:text-accent transition-colors duration-300" data-i18n="hero.cta_secondary">
-                    Escríbeme por correo
+                <a href="https://linkedin.com/in/jorgecontreras-profile" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-1.5 px-4 py-2 border border-gray-200 text-gray-700 font-light text-sm rounded-sm hover:border-accent hover:text-accent transition-colors duration-300">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/jorgecontreras" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-1.5 px-4 py-2 border border-gray-200 text-gray-700 font-light text-sm rounded-sm hover:border-accent hover:text-accent transition-colors duration-300">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
+                    GitHub
+                </a>
+                <a href="https://medium.com/@jorge-contreras" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-1.5 px-4 py-2 border border-gray-200 text-gray-700 font-light text-sm rounded-sm hover:border-accent hover:text-accent transition-colors duration-300">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"></path></svg>
+                    Medium
                 </a>
             </div>
         </div>
         
-        <!-- Decorative / Image placeholder -->
-        <div class="w-full md:w-2/5 relative hidden md:block">
-             <div class="aspect-[4/5] bg-gray-50 rounded-sm relative overflow-hidden border border-gray-100 flex items-center justify-center">
-                <!-- Abstract minimal graphic or placeholder for photo -->
-                <div class="text-gray-300 font-light text-4xl opacity-20">JC</div>
-                <div class="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/0 to-accent/5"></div>
+        <div class="w-full md:w-2/5 relative hidden md:flex justify-end items-start">
+             <div class="w-1/2 aspect-square bg-gray-50 rounded-2xl relative overflow-hidden border border-gray-100">
+                <img src="media/profile.png" alt="Jorge Contreras" class="w-full h-full object-cover object-center">
              </div>
         </div>
     </section>
 
-    <!-- About Section (Quién soy) -->
-    <section id="about" class="py-20 md:py-32 bg-white border-t border-gray-50">
+    <!-- About -->
+    <section id="about" class="scroll-mt-24 py-20 md:py-32 bg-white border-t border-gray-50">
         <div class="max-w-4xl mx-auto px-6">
             <div class="space-y-12">
-                <h3 class="text-sm uppercase tracking-widest text-accent font-bold mb-2" data-i18n="about.title">Quién soy</h3>
+                <h3 class="text-sm uppercase tracking-widest text-accent font-light mb-2">Who I am</h3>
                 
                 <div class="prose prose-lg prose-neutral max-w-none text-gray-700 leading-loose">
-                    <p class="text-2xl md:text-3xl font-light text-primary mb-10 leading-snug" data-i18n="about.main">
-                        Soy líder tecnológico con más de 15 años de experiencia desarrollando software, diseñando plataformas en la nube y dirigiendo equipos técnicos.
+                    <p class="text-2xl md:text-3xl font-light text-primary mb-10 leading-snug">
+                        I am an Engineering Manager with over 15 years building backend platforms, designing cloud systems, and leading technical teams.
                     </p>
                     
                     <div class="pl-6 border-l-2 border-accent my-12">
-                        <p class="text-2xl font-medium text-primary italic" data-i18n="about.quote">
-                            “Traduzco la tecnología al lenguaje del negocio.”
+                        <p class="text-2xl font-light text-primary italic">
+                            “I build AI systems that run in production.”
                         </p>
                     </div>
 
-                    <p data-i18n="about.list_intro">
-                        He trabajado con directores, equipos operativos y fundadores para:
+                    <p>
+                        I work on:
                     </p>
                     <ul class="list-disc pl-5 space-y-2 marker:text-accent">
-                        <li data-i18n="about.list_1">Reducir costos a través de automatización</li>
-                        <li data-i18n="about.list_2">Mejorar tiempos de entrega y calidad</li>
-                        <li data-i18n="about.list_3">Crear productos digitales desde cero</li>
-                        <li data-i18n="about.list_4">Integrar IA en procesos reales (no sólo como moda)</li>
-                        <li data-i18n="about.list_5">Diseñar sistemas escalables que soportan el crecimiento</li>
+                        <li>MCP servers and enterprise context for agents</li>
+                        <li>AI governance: identity, permissions, auditing, and policy</li>
+                        <li>LLMs in production: evals, cost, latency, and observability</li>
+                        <li>Cloud platforms and Kubernetes at scale</li>
+                        <li>Technical teams and roadmaps with measurable impact</li>
                     </ul>
-                    <p class="mt-8 font-medium" data-i18n="about.closing">
-                        Diseño y Construyo soluciones reales.
-                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section (Qué hago) -->
-    <section id="services" class="py-20 md:py-32 bg-secondary/30">
+    <!-- Focus -->
+    <section id="services" class="scroll-mt-24 py-20 md:py-32 bg-secondary/30">
         <div class="max-w-7xl mx-auto px-6">
             <div class="mb-16 md:mb-24">
-                <h3 class="text-sm uppercase tracking-widest text-accent font-bold mb-4" data-i18n="services.label">Servicios</h3>
-                <h2 class="text-3xl md:text-4xl font-bold text-primary" data-i18n="services.title">Qué puedo hacer por tu empresa</h2>
+                <h3 class="text-sm uppercase tracking-widest text-accent font-light mb-4">Focus</h3>
+                <h2 class="text-3xl md:text-4xl font-light text-primary">Where I contribute</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-white p-8 md:p-10 shadow-sm border border-gray-100 rounded-sm group service-card">
-                    <div class="w-10 h-10 bg-secondary rounded-sm flex items-center justify-center mb-6 group-hover:bg-accent/10 transition-colors">
-                        <svg class="w-5 h-5 text-primary group-hover:text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-bold mb-3 text-primary" data-i18n="services.c1_title">Automatización y optimización</h4>
-                    <p class="text-gray-600 leading-relaxed" data-i18n="services.c1_desc">
-                        Mejoro la eficiencia operativa usando IA, datos y herramientas modernas para reducir tareas repetitivas.
+                <div class="bg-white p-8 md:p-10 shadow-sm border border-gray-100 rounded-sm service-card">
+                    <h4 class="text-xl font-light mb-3 text-primary">MCP &amp; enterprise context</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        MCP servers, tool calling, and identity-aware access for agents using internal systems.
                     </p>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="bg-white p-8 md:p-10 shadow-sm border border-gray-100 rounded-sm group service-card">
-                    <div class="w-10 h-10 bg-secondary rounded-sm flex items-center justify-center mb-6 group-hover:bg-accent/10 transition-colors">
-                        <svg class="w-5 h-5 text-primary group-hover:text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-bold mb-3 text-primary" data-i18n="services.c2_title">Cloud & Arquitectura</h4>
-                    <p class="text-gray-600 leading-relaxed" data-i18n="services.c2_desc">
-                        Diseño de plataformas en AWS, Azure y soluciones híbridas para empresas que quieren escalar sin complicaciones.
+                <div class="bg-white p-8 md:p-10 shadow-sm border border-gray-100 rounded-sm service-card">
+                    <h4 class="text-xl font-light mb-3 text-primary">Production AI</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        RAG, evals, guardrails, cost control, and observability for LLM systems in production.
                     </p>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="bg-white p-8 md:p-10 shadow-sm border border-gray-100 rounded-sm group service-card">
-                    <div class="w-10 h-10 bg-secondary rounded-sm flex items-center justify-center mb-6 group-hover:bg-accent/10 transition-colors">
-                        <svg class="w-5 h-5 text-primary group-hover:text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-bold mb-3 text-primary" data-i18n="services.c3_title">Integración de IA</h4>
-                    <p class="text-gray-600 leading-relaxed" data-i18n="services.c3_desc">
-                        Chatbots, análisis avanzado, workflows inteligentes y asistentes empresariales integrados en tu negocio.
+                <div class="bg-white p-8 md:p-10 shadow-sm border border-gray-100 rounded-sm service-card">
+                    <h4 class="text-xl font-light mb-3 text-primary">AI governance</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        Permissions, auditing, policy, and handling of sensitive data in regulated environments.
                     </p>
                 </div>
 
-                <!-- Card 4 -->
-                <div class="bg-white p-8 md:p-10 shadow-sm border border-gray-100 rounded-sm group service-card">
-                    <div class="w-10 h-10 bg-secondary rounded-sm flex items-center justify-center mb-6 group-hover:bg-accent/10 transition-colors">
-                        <svg class="w-5 h-5 text-primary group-hover:text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-bold mb-3 text-primary" data-i18n="services.c4_title">Desarrollo de Software</h4>
-                    <p class="text-gray-600 leading-relaxed" data-i18n="services.c4_desc">
-                        APIs, microservicios, portales internos y soluciones a medida que conectan tus sistemas actuales.
+                <div class="bg-white p-8 md:p-10 shadow-sm border border-gray-100 rounded-sm service-card">
+                    <h4 class="text-xl font-light mb-3 text-primary">Cloud &amp; platform</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        AWS, Kubernetes, and multi-cloud architecture for systems that need to scale.
                     </p>
                 </div>
 
-                <!-- Card 5 -->
-                <div class="bg-white p-8 md:p-10 shadow-sm border border-gray-100 rounded-sm group md:col-span-2 lg:col-span-2 service-card">
-                    <div class="w-10 h-10 bg-secondary rounded-sm flex items-center justify-center mb-6 group-hover:bg-accent/10 transition-colors">
-                        <svg class="w-5 h-5 text-primary group-hover:text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-bold mb-3 text-primary" data-i18n="services.c5_title">Acompañamiento estratégico</h4>
-                    <p class="text-gray-600 leading-relaxed" data-i18n="services.c5_desc">
-                        Trabajemos juntos para llevar tu empresa al siguiente nivel tecnológico, con una hoja de ruta clara y resultados medibles. No solo código, sino visión de negocio.
+                <div class="bg-white p-8 md:p-10 shadow-sm border border-gray-100 rounded-sm service-card">
+                    <h4 class="text-xl font-light mb-3 text-primary">Engineering leadership</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        I lead teams, set roadmaps, and ship AI initiatives into production.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Results Section -->
-    <section id="results" class="py-20 md:py-32 bg-white">
+    <!-- Results -->
+    <section id="results" class="scroll-mt-24 py-20 md:py-32 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col md:flex-row gap-16">
                 <div class="md:w-1/3">
-                    <h3 class="text-sm uppercase tracking-widest text-accent font-bold mb-4" data-i18n="results.label">Impacto</h3>
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6" data-i18n="results.title">Resultados Tangibles</h2>
-                    <p class="text-gray-600" data-i18n="results.intro">
-                        La tecnología debe servir para mover la aguja del negocio. Estos son ejemplos de lo que he logrado para mis clientes.
+                    <h3 class="text-sm uppercase tracking-widest text-accent font-light mb-4">Impact</h3>
+                    <h2 class="text-3xl md:text-4xl font-light text-primary mb-6">Tangible Results</h2>
+                    <p class="text-gray-600">
+                        Impact from platforms I have built and led.
                     </p>
                 </div>
                 
                 <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-8">
                     <div class="border-l-4 border-gray-100 pl-6 py-2 hover:border-accent transition-colors">
-                        <p class="text-lg font-semibold text-primary mb-2" data-i18n="results.i1_title">Reducción del 40%</p>
-                        <p class="text-gray-600" data-i18n="results.i1_desc">En tiempos operativos mediante automatización inteligente de procesos con IA.</p>
+                        <p class="text-lg font-light text-primary mb-2">MTTR −50%</p>
+                        <p class="text-gray-600">Observability, logging, and incident response for backend platforms in production.</p>
                     </div>
                     
                     <div class="border-l-4 border-gray-100 pl-6 py-2 hover:border-accent transition-colors">
-                        <p class="text-lg font-semibold text-primary mb-2" data-i18n="results.i2_title">Plataforma Unificada</p>
-                        <p class="text-gray-600" data-i18n="results.i2_desc">Integración de sistemas dispersos y legados en una sola plataforma digital moderna.</p>
+                        <p class="text-lg font-light text-primary mb-2">From monthly to continuous</p>
+                        <p class="text-gray-600">CI/CD, containers, and orchestration to go from one release a month to several per week.</p>
                     </div>
 
                     <div class="border-l-4 border-gray-100 pl-6 py-2 hover:border-accent transition-colors">
-                        <p class="text-lg font-semibold text-primary mb-2" data-i18n="results.i3_title">Arquitectura Multi-nube</p>
-                        <p class="text-gray-600" data-i18n="results.i3_desc">Diseño resiliente para garantizar continuidad de negocio y máxima seguridad de datos.</p>
+                        <p class="text-lg font-light text-primary mb-2">Scale of millions</p>
+                        <p class="text-gray-600">An AWS microservices platform that powers mobile products used by millions of people.</p>
                     </div>
 
                     <div class="border-l-4 border-gray-100 pl-6 py-2 hover:border-accent transition-colors">
-                        <p class="text-lg font-semibold text-primary mb-2" data-i18n="results.i4_title">Modernización Crítica</p>
-                        <p class="text-gray-600" data-i18n="results.i4_desc">Actualización de procesos clave en industrias con fuerte carga regulatoria y de compliance.</p>
+                        <p class="text-lg font-light text-primary mb-2">MCP + governance</p>
+                        <p class="text-gray-600">MCP servers, identity-aware access, and AI policy in a regulated enterprise environment.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="py-20 bg-white">
+    <!-- Certifications -->
+    <section id="certifications" class="scroll-mt-24 py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <h3 class="text-sm uppercase tracking-widest text-accent font-bold mb-12" data-i18n="cert.title">Certificaciones y Credenciales</h3>
+            <h3 class="text-sm uppercase tracking-widest text-accent font-light mb-12">Certifications &amp; Credentials</h3>
             
             <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-80 grayscale hover:grayscale-0 transition-all duration-500">
                 
-                <!-- AWS Machine Learning Specialty -->
                 <div class="flex flex-col items-center gap-3 w-32 md:w-40">
                     <img src="media/awsai.png" alt="AWS AI Practitioner" class="h-20 md:h-24 object-contain">
-                    <span class="text-xs text-gray-500 font-medium">AWS AI Practitioner</span>
+                    <span class="text-xs text-gray-500 font-light">AWS AI Practitioner</span>
                 </div>
 
-                <!-- AWS Solutions Architect -->
                 <div class="flex flex-col items-center gap-3 w-32 md:w-40">
                     <img src="media/awscloud.png" alt="AWS Cloud Practitioner" class="h-20 md:h-24 object-contain">
-                    <span class="text-xs text-gray-500 font-medium">AWS Cloud Practitioner</span>
+                    <span class="text-xs text-gray-500 font-light">AWS Cloud Practitioner</span>
                 </div>
 
-                <!-- AWS Developer -->
                 <div class="flex flex-col items-center gap-3 w-32 md:w-40">
                     <img src="media/awsdev.png" alt="AWS Developer" class="h-20 md:h-24 object-contain">
-                    <span class="text-xs text-gray-500 font-medium">AWS Developer</span>
+                    <span class="text-xs text-gray-500 font-light">AWS Developer</span>
                 </div>
 
-                <!-- CKAD -->
                 <div class="flex flex-col items-center gap-3 w-32 md:w-40">
                     <img src="media/ckad.png" alt="CKAD Kubernetes Developer" class="h-20 md:h-24 object-contain">
-                    <span class="text-xs text-gray-500 font-medium">CKAD Kubernetes</span>
+                    <span class="text-xs text-gray-500 font-light">CKAD Kubernetes</span>
                 </div>
 
-                <!-- PMI-ACP -->
                 <div class="flex flex-col items-center gap-3 w-32 md:w-40">
                     <img src="media/pmiacp.png" alt="PMI Agile Certified Practitioner" class="h-20 md:h-24 object-contain">
-                    <span class="text-xs text-gray-500 font-medium">PMI-ACP Agile</span>
+                    <span class="text-xs text-gray-500 font-light">PMI-ACP Agile</span>
                 </div>
 
-                <!-- GitHub Foundations -->
                 <div class="flex flex-col items-center gap-3 w-32 md:w-40">
                     <img src="media/ghf.png" alt="GitHub Foundations" class="h-20 md:h-24 object-contain">
-                    <span class="text-xs text-gray-500 font-medium">GitHub Foundations</span>
+                    <span class="text-xs text-gray-500 font-light">GitHub Foundations</span>
                 </div>
 
-                <!-- Terraform Associate -->
                 <div class="flex flex-col items-center gap-3 w-32 md:w-40">
                     <img src="media/tf.png" alt="Terraform Associate" class="h-20 md:h-24 object-contain">
-                    <span class="text-xs text-gray-500 font-medium">Terraform Associate</span>
+                    <span class="text-xs text-gray-500 font-light">Terraform Associate</span>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 md:py-32 bg-primary text-white text-center">
+    <!-- Contact -->
+    <section id="contact" class="scroll-mt-24 py-20 md:py-32 bg-primary text-white text-center">
         <div class="max-w-3xl mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6" data-i18n="contact.title">¿Hablamos de tu proyecto?</h2>
-            <p class="text-gray-400 text-lg mb-12 leading-relaxed" data-i18n="contact.text">
-                Si tienes un proyecto en mente o simplemente quieres explorar cómo la tecnología puede ayudar a tu negocio, estaré encantado de escucharte.
+            <h2 class="text-3xl md:text-4xl font-light mb-6">Let's talk</h2>
+            <p class="text-gray-400 text-lg mb-12 leading-relaxed">
+                If you are building an AI Platform team, email me.
             </p>
             
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-12">
-                <a href="mailto:hi@jorgecontreras.dev" class="w-full sm:w-auto px-8 py-4 bg-accent text-white font-medium text-lg rounded-sm hover:bg-accent-hover transition-colors duration-300" data-i18n="contact.cta_primary">
-                    Agendar una llamada
+            <div class="flex flex-row flex-wrap justify-center items-center gap-2 mb-12">
+                <a href="mailto:hi@jorgecontreras.dev" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-accent text-white font-light text-sm rounded-sm hover:bg-accent-hover transition-colors duration-300">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    Email me
                 </a>
-                <a href="https://linkedin.com/in/jorgecontreras-profile" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 border border-gray-700 text-gray-300 font-medium text-lg rounded-sm hover:border-accent hover:text-accent transition-colors duration-300 flex items-center justify-center gap-2">
-                    <span>LinkedIn</span>
-                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <a href="https://linkedin.com/in/jorgecontreras-profile" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 border border-gray-700 text-gray-300 font-light text-sm rounded-sm hover:border-accent hover:text-accent transition-colors duration-300">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/jorgecontreras" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 border border-gray-700 text-gray-300 font-light text-sm rounded-sm hover:border-accent hover:text-accent transition-colors duration-300">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
+                    GitHub
+                </a>
+                <a href="https://medium.com/@jorge-contreras" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 border border-gray-700 text-gray-300 font-light text-sm rounded-sm hover:border-accent hover:text-accent transition-colors duration-300">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"></path></svg>
+                    Medium
                 </a>
             </div>
 
@@ -362,10 +334,14 @@ DEPLOYMENT INSTRUCTIONS (S3 + CloudFront):
     <!-- Footer -->
     <footer class="bg-primary border-t border-gray-800 py-8">
         <div class="max-w-7xl mx-auto px-6 text-center text-gray-600 text-sm">
-            <p data-i18n="footer.rights">&copy; <script>document.write(new Date().getFullYear())</script> Jorge Contreras. Todos los derechos reservados.</p>
+            <div class="flex justify-center items-center gap-6 mb-4">
+                <a href="https://github.com/jorgecontreras" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">GitHub</a>
+                <a href="https://medium.com/@jorge-contreras" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Medium</a>
+                <a href="https://linkedin.com/in/jorgecontreras-profile" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">LinkedIn</a>
+            </div>
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Jorge Contreras. All rights reserved.</p>
         </div>
     </footer>
 
 </body>
 </html>
-
