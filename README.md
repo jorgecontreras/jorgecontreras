@@ -1,9 +1,5 @@
 # Jorge Contreras
 
-**Engineering leader. AI strategy and platforms.**
-
-I lead engineering teams, AI strategy, and the platforms behind them. MCP servers, governance, and LLM systems in production. 15+ years in technical leadership.
-
 I lead AI strategy and the systems that run in production.
 
 Currently at McQuilling Partners I lead the design and development of Sailbot, a maritime intelligence platform, and ETL pipelines for market data and AIS positions.
