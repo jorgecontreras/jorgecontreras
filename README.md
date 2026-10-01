@@ -2,7 +2,7 @@
 
 I lead AI strategy and the systems that run in production.
 
-Currently at McQuilling Partners I lead the design and development of Sailbot, a maritime intelligence platform, and ETL pipelines for market data and AIS positions.
+Currently at McQuilling Partners I lead the design and development of Sailbot, a maritime intelligence platform.
 
 **[jorgecontreras.dev](https://jorgecontreras.dev)**
 
